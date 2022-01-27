@@ -2,6 +2,26 @@
 
 source: `{{ page.path }}`
 
+
+
+Elasticsearch는 분산형 RESTful 검색 및 분석 엔진이다. 정형, 비정형, 위치정보, 메트릭 등 다양한 유형의 검색을 수행하고 결합할 수 있다. 크게 **indexing**(색인), **analyzing**(분석), **searching**(검색) 등의 기능이 존재하며 색인된 데이터를 source로 사용하여 분석과 검색을 실시한다. 
+
+**Elasticsearch의 작동 Mechanism**에 대해 살펴보자 (cluster, node 등에 관한 시스템 구조는 향후에 서술)
+
+
+
+![image-20220127154025683](C:\Users\hcwan\AppData\Roaming\Typora\typora-user-images\image-20220127154025683.png)
+
+
+
+수집한 데이터를 Elasticsearch를 통해 **indexing**해준다. 이 때 **Index Templates**을 미리 작성해두면 index의 field를 설정하거나 data 속성을 정해줄 수 있다. 한번 색인되어 만들어진 index data는 수정이 어렵기 때문에 원하는 목적을 고려해 미리 Index Templates을 작성해 이용하는 것이 좋다. 그 결과 만들어진 index data를 resourece로 사용하여 **analyzing**, **searching** 작업을 수행한다.
+
+Elasticsearch 사용을 위한 mechinsm 설명은 여기까지 하고, 이제 실제 사용을 위한 설치 작업으로 들어가보자.
+
+
+
+
+
 #### 1. `git checkout [commit]`상태에서 본래 branch로 돌아갈때, `git checkout master`에서 Error 발생!
 
 ```bash
