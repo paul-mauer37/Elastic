@@ -10,9 +10,7 @@ Kibana는 시각화 기술로서 Elasticsearch에 의해 색인된 데이터를 
 
 
 
-![Logstash Architecture](C:\Users\hcwan\AppData\Roaming\Typora\typora-user-images\image-20220126173554820.png)
-
-![image-20220126173623320](C:\Users\hcwan\AppData\Roaming\Typora\typora-user-images\image-20220126173623320.png)
+![kibana_dashboard_blur](C:\Users\hcwan\Desktop\secondary task\홈페이지 관리\access_log프로젝트\kibana_dashboard_blur.JPG)
 
 
 
