@@ -18,6 +18,10 @@ Logstash는 수집 도구로 잘 알려진 데이터 처리 파이프라인(pipe
 
 Logstash는 다중 파이프라인 구조를 갖기 때문에 동시에 여러 데이터 소스에서 데이터를 수집해 정제한 뒤 다양한 목적지로 보낼 수 있습니다.
 
+* 단일 파이프라인 - 단일 구성 파일
+* 여러 구성파일 & 단일 파이프라인 - 특정 디렉토리의 모든 파일을 구성 파일로 사용(logstash.yml 설정 또는 -f 옵션으로 디렉토리 지정)
+* 다중 파이프라인 - pipeline.yml 파일 설정
+
 이제 Logstash를 설치하고 사용자의 목적에 알맞게 파이프라인을 설계한 뒤, 실제로 수집 및 정제가 제대로 이루어지는지 확인해보겠습니다.
 
 
@@ -66,9 +70,9 @@ $ bin/logstash -f config/temp.conf
 
 
 
-[ Troubleshooting ]   ~   test pipeline
+##### [ Troubleshooting ]   ~   test pipeline
 
-##### ERROR: Failed to execute action {:action=>LogStash::PipelineAction::Create/pipeline_id:main, :exception=>"Java::JavaLang::IllegalStateException", :message=>"Unable to configure plugins:
+**ERROR: Failed to execute action {:action=>LogStash::PipelineAction::Create/pipeline_id:main, :exception=>"Java::JavaLang::IllegalStateException", :message=>"Unable to configure plugins:**
 
 * pipelind_id에 해당하는 파이프라인에서 오류 발생(pipeline_id는 main이 기본)
 

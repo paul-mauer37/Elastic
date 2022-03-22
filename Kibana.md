@@ -37,8 +37,8 @@ $ tar -zxvf kibana-oss-7.10.2-linux-x86_64.tar.gz
 $ vi config/kibana.yml
 -----------------------
 server.port: 5601
-server.host: "[kibana실행 host의 ip주소]"
-elasticsearch.hosts: ["elasticsearch실행 ip주소:9200"]
+server.host: "[kibana실행서버IP]"
+elasticsearch.hosts: ["elasticsearch실행서버IP:9200"]
 -----------------------
 ```
 
